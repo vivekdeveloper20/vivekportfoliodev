@@ -48,7 +48,7 @@ import snglogo from './assets/education_logo/sngschool.png';
 // Project Section Logo's
 import githubdetLogo from './assets/work_logo/internsroot.png';
 // import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/ProfileRoot.png';
+import movierecLogo from './assets/work_logo/profileroot.png';
 import taskremLogo from './assets/work_logo/adbunchh.png';
 import npmLogo from './assets/work_logo/financial service.png';
 import webverLogo from './assets/work_logo/beautyp.png';
@@ -211,7 +211,7 @@ export const SkillsInfo = [
     },
     {
       id: 2,
-      title: "GitHub Profile Checker (ProfileRoot)",
+      title: "GitHub Profile Checker (profileroot)",
       description:
         "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information.Simply enter a GitHub username, and the app fetches comprehensive data including profile stats, repositories, followers, and contributions.The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
       image: movierecLogo,
