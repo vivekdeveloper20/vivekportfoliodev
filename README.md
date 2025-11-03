@@ -41,5 +41,5 @@ npm run build
 
 ## 🌟 Credits
 
-This project was created with ❤️ by [Roshan Gupta](https://roshangupta07.vercel.app/).
+This project was created with ❤️ by vivek kumar
 If you like it, feel free to ⭐ this repository and share!
