@@ -47,8 +47,7 @@ import rrclogo from './assets/education_logo/rajendra college cpr.png';
 import snglogo from './assets/education_logo/sngschool.png';
 // Project Section Logo's
 import githubdetLogo from './assets/work_logo/internsroot.png';
-// import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/ProfileRoot.png';
+import ProfileRoot from "./assets/work_logo/ProfileRoot.png";
 import taskremLogo from './assets/work_logo/adbunchh.png';
 import npmLogo from './assets/work_logo/financial service.png';
 import webverLogo from './assets/work_logo/beautyp.png';
