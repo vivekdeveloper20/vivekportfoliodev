@@ -7,6 +7,7 @@ import roshanPhoto from '../../assets/vivekpics.png';
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
+  const messageRef = useRef(null);
 
   // Initialize EmailJS with your public key
   useEffect(() => {
@@ -71,6 +72,14 @@ const Contact = () => {
     document.body.removeChild(link);
   };
 
+  // Auto-resize message textarea for better mobile UX
+  const handleMessageInput = () => {
+    const ta = messageRef.current;
+    if (!ta) return;
+    ta.style.height = 'auto';
+    ta.style.height = `${ta.scrollHeight}px`;
+  };
+
   return (
     <section
       id="contact"
@@ -78,9 +87,9 @@ const Contact = () => {
     >
       {/* Professional Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-40 h-40 bg-cyan-400 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-sky-400 rounded-full blur-3xl animate-bounce"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-indigo-400 rounded-full blur-3xl animate-ping"></div>
+        <div className="absolute top-20 left-10 w-40 h-40 bg-cyan-400 rounded-full blur-3xl motion-safe:animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-sky-400 rounded-full blur-3xl motion-safe:animate-bounce"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-indigo-400 rounded-full blur-3xl motion-safe:animate-ping"></div>
       </div>
 
       {/* Toast Container */}
@@ -114,7 +123,7 @@ const Contact = () => {
                     alt="Vivek Kumar" 
                     className="w-16 h-16 rounded-full object-cover border-2 border-indigo-400/50 shadow-md hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
+                  <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white motion-safe:animate-pulse"></div>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-bold text-white mb-1">Vivek Kumar</h3>
@@ -136,7 +145,7 @@ const Contact = () => {
               </p>
               <button
                 onClick={handleDownloadCV}
-                className="w-full bg-gradient-to-r from-indigo-600 to-cyan-700 hover:from-indigo-700 hover:to-cyan-800 text-white font-medium py-2 px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25 flex items-center justify-center space-x-2 text-sm"
+                className="w-full bg-gradient-to-r from-indigo-600 to-cyan-700 hover:from-indigo-700 hover:to-cyan-800 text-white font-medium py-3 px-4 sm:py-2 sm:px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25 flex items-center justify-center space-x-2 text-sm"
               >
                 <span>📥</span>
                 <span>Download</span>
@@ -153,7 +162,7 @@ const Contact = () => {
               </p>
               <a
                 href="mailto:vivekkumarlpu1@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Vivek%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards%2C"
-                className="w-full bg-gradient-to-r from-indigo-600 to-cyan-700 hover:from-indigo-700 hover:to-cyan-800 text-white font-medium py-2 px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25 flex items-center justify-center space-x-2 text-sm"
+                className="w-full bg-gradient-to-r from-indigo-600 to-cyan-700 hover:from-indigo-700 hover:to-cyan-800 text-white font-medium py-3 px-4 sm:py-2 sm:px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25 flex items-center justify-center space-x-2 text-sm"
                 aria-label="Send an email to Vivek Kumar via your email client"
                 title="Opens your default email client to send an email"
               >
@@ -228,9 +237,11 @@ const Contact = () => {
               </div>
               <div className="group">
                 <textarea
+                  ref={messageRef}
+                  onInput={handleMessageInput}
                   name="message"
                   placeholder="Your Message"
-                  rows="4"
+                  rows="3"
                   required
                   className="w-full p-3 rounded-lg bg-slate-700/30 text-white border border-slate-600/50 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all duration-300 placeholder-gray-400 group-hover:border-indigo-400/50 resize-none"
                 />

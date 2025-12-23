@@ -133,7 +133,7 @@ const openSourceContributions = [
     name: 'LeetCode',
     icon: <FaCode className="text-3xl text-yellow-400" />,
     desc: 'Solved 500+ coding problems, participated in contests, and shared solutions.',
-    link: 'https://leetcode.com/your-leetcode-username',
+    link: 'https://leetcode.com/u/vivcode1/',
   },
   {
     id: 3,
@@ -147,14 +147,14 @@ const openSourceContributions = [
     name: 'HackerRank',
     icon: <FaHackerrank className="text-3xl text-green-500" />,
     desc: 'Earned multiple badges in problem solving, algorithms, and more.',
-    link: 'https://www.hackerrank.com/your-hackerrank-username',
+    link: 'https://www.hackerrank.com/profile/vivekkumar05',
   },
   {
     id: 5,
     name: 'TryHackMe',
     icon: <FaCode className="text-3xl text-cyan-400" />,
     desc: 'Completed cybersecurity labs and challenges, improved practical skills.',
-    link: 'http://tryhackme.com/p/vivek01',
+    link: 'https://tryhackme.com/p/vivek01',
   },
 ];
 

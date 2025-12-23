@@ -8,6 +8,8 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Certifications, { Contributions } from "./components/Education/Certifications";
+import AnimatedStats from "./components/Stats/AnimatedStats";
+import CommandPalette from "./components/CommandPalette/CommandPalette";
 
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
       <div className="relative pt-20">
         <Navbar />
         <About />
+        <AnimatedStats />
         <Skills />
         <Experience />
         <Work />
@@ -35,6 +38,7 @@ const App = () => {
         <Education />
         <Contact />
         <Footer />
+        <CommandPalette />
       </div>
     </div>
   );

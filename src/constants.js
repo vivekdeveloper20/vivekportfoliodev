@@ -55,6 +55,9 @@ import webverLogo from './assets/work_logo/beautyp.png';
 import cmLogo from './assets/work_logo/cm.png';
 import imagesearchLogo from './assets/work_logo/image_search.png';
 import removebgLogo from './assets/work_logo/remove_bg.png';
+import fundrootLogo from './assets/work_logo/fundroot.png';
+import windowsLogo from './assets/windows.png';
+import weatherinfoLogo from './assets/weather.png';
 
 
 export const SkillsInfo = [
@@ -201,16 +204,46 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
+      title: "FundRoots – Financial Services & Loan Solutions Platform (Home, Personal & Car Loans)",
+      description:
+        "FundRoots is a modern platform showcasing funding-focused features and clean UI.",
+      image: fundrootLogo,
+      tags: ["React JS", "Next.js", "Tailwind CSS", "Node.js", "Express.js", "MySQL","MongoDB","JWT Authentication","REST API"],
+      github: "https://github.com/vivekdeveloper20/fundroots",
+      webapp: "https://fundroots.vercel.app/",
+    },
+    {
+      id: 1,
+      title: "Windows 11 Interactive Web OS (Frontend Simulation)",
+      description:
+        "An interactive Windows 11–style web OS simulation featuring taskbar, start menu, desktop UI, authentication with JWT & OAuth, responsive design, and production deployment on Vercel.",
+      image: windowsLogo,
+      tags: ["React JS", "TypeScript", "Tailwind CSS", "JWT", "OAuth", "Vercel"],
+      github: "https://github.com/vivekdeveloper20/windows11by_vivek",
+      webapp: "https://windows11by-vivek.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Weather Information App",
+      description:
+        "A comprehensive weather application built with React.js that provides real-time weather information for cities worldwide. Users can search for any city and get detailed weather data including temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive design with dynamic weather icons and provides both current weather and forecast information.",
+      image: weatherinfoLogo,
+      tags: ["React JS", "API", "Weather API", "CSS", "Javascript"],
+      github: "https://github.com/vivekdeveloper20/WeatherInfo-main-",
+      webapp: "https://weather-info-main.vercel.app/",
+    },
+    {
+      id: 3,
       title: "E-Learning Plateform Internsroot",
       description:
         "A comprehensive E-Learning platform built with modern web technologies. Features include interactive courses, user authentication, progress tracking, and a responsive design for seamless learning experience across all devices.",
       image: githubdetLogo,
       tags: ["HTML", "CSS", "JavaScript", "bootstrap"],
-      github: "https://www.internsroot.com/",
-      webapp: "https://www.internsroot.com/",
+      github: "https://github.com/vivekdeveloper20/AccoStudy",
+      webapp: "https://acco-study.vercel.app/",
     },
     {
-      id: 2,
+      id: 4,
       title: "GitHub Profile Checker (profileroot)",
       description:
         "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information.Simply enter a GitHub username, and the app fetches comprehensive data including profile stats, repositories, followers, and contributions.The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
@@ -220,7 +253,7 @@ export const SkillsInfo = [
       webapp: "https://profileroot.netlify.app/",
     },
     {
-      id: 3,
+      id: 5,
       title: "Financial Services Consultancy Website",
       description:
         "A modern, responsive consultancy website built with React.js and deployed on Vercel, designed to guide students and parents through the journey of college admissions, career options, education loans, and study abroad opportunities.The platform features a clean UI, fast performance, and well-structured content to help students make the right academic and financial choices with ease.",
@@ -230,7 +263,7 @@ export const SkillsInfo = [
       webapp: "https://consultancy-jet-theta.vercel.app/", 
     },
     {
-      id: 4,
+      id: 6,
       title: "AdBunchh – Digital Marketing, Web Development & Brand Growth Solutions",
       description:
         "AdBunchh is a full-service digital marketing and web development agency empowering brands to thrive in the digital era. From tailored marketing strategies to high-performance websites, we deliver innovative, data-driven solutions that drive visibility, engagement, and growth.Our services include Digital Marketing, Web Development, Affiliate Marketing, UI/UX Design, Cyber Security, and more—crafted to meet your unique business goals with creativity and precision.",
@@ -240,43 +273,13 @@ export const SkillsInfo = [
       webapp: "https://adbunchh.netlify.app/",
     },
     {
-      id: 5,
+      id: 7,
       title: "Glow Essence – Redefining Beauty, Naturally",
       description:
         "Glow Essence is a modern beauty parlour website designed to highlight elegance, care, and professionalism. With a soothing aesthetic and user-friendly layout, the site offers a seamless experience for visitors to explore services, book appointments, and discover beauty tips.From skincare to styling, Glow Essence brings out your natural glow with expert care and personalized attention.",
       image: webverLogo,
       tags: ["React JS", "Tailwind CSS", "JavaScript", "PHP"],
       github: "https://github.com/vivekdeveloper20",
-      webapp: "#",// TODO: Update with real repository link
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: cmLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "#", // TODO: Update with real repository link
-      webapp: "#", // TODO: Update with real live demo link
-    },
-    {
-      id: 7,
-      title: "Weather Information App",
-      description:
-        "A comprehensive weather application built with React.js that provides real-time weather information for cities worldwide. Users can search for any city and get detailed weather data including temperature, humidity, wind speed, and weather conditions. The app features a clean, responsive design with dynamic weather icons and provides both current weather and forecast information.",
-      image: imagesearchLogo,
-      tags: ["React JS", "API", "Weather API", "CSS", "Javascript"],
-      github: "https://github.com/vivekdeveloper20",
       webapp: "#",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/vivekdeveloper20",
-      webapp: "https://github.com/vivekdeveloper20",
     },
   ];  

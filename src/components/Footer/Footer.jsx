@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-5 left-10 w-20 h-20 bg-cyan-400 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-5 right-10 w-16 h-16 bg-indigo-500 rounded-full blur-2xl animate-bounce"></div>
+        <div className="absolute top-5 left-10 w-20 h-20 bg-cyan-400 rounded-full blur-2xl motion-safe:animate-pulse"></div>
+        <div className="absolute bottom-5 right-10 w-16 h-16 bg-indigo-500 rounded-full blur-2xl motion-safe:animate-bounce"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ const Footer = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-cyan-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-indigo-500/10 border border-slate-700/50 hover:border-cyan-400/30"
+                className="text-gray-300 hover:text-cyan-400 transition-all duration-300 transform hover:scale-110 p-3 sm:p-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-indigo-500/10 border border-slate-700/50 hover:border-cyan-400/30"
                 title={item.label}
               >
                 {item.icon}
@@ -50,7 +50,7 @@ const Footer = () => {
                 href="https://drive.google.com/file/d/1oZTwhH8bgkFqaJFaX-xkaDlq2RFYciXj/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-indigo-500 text-white text-sm font-medium rounded-md shadow-sm hover:scale-105 transition-transform duration-200"
+                className="w-full sm:inline-flex items-center justify-center px-4 py-3 sm:py-2 bg-gradient-to-r from-cyan-500 to-indigo-500 text-white text-sm font-medium rounded-md shadow-sm hover:scale-105 transition-transform duration-200"
                 title="Open CV"
               >
                 View CV

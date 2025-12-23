@@ -96,8 +96,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Social Icons */}
-          <div className="hidden md:flex space-x-4">
+          {/* Social Icons + Cybersecurity CTA */}
+          <div className="hidden md:flex items-center space-x-4">
             <a
               href="https://github.com/vivekdeveloper20"
               target="_blank"
@@ -113,6 +113,15 @@ const Navbar = () => {
               className="text-gray-300 hover:text-indigo-400 transition-colors duration-300 hover:scale-110"
             >
               <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://your-cyber-portfolio-link.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-700 hover:to-cyan-700 text-white font-semibold rounded-full transition-all duration-300 border border-cyan-400/60 shadow-sm"
+            >
+              <span role="img" aria-label="cyber">🛡️</span>
+              <span>Cybersecurity</span>
             </a>
           </div>
 
@@ -151,6 +160,16 @@ const Navbar = () => {
                   </button>
                 </li>
               ))}
+              <li className="w-full px-6 pt-2">
+                <a
+                  href="https://your-cyber-portfolio-link.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-4 py-3 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-700 hover:to-cyan-700 text-white font-semibold rounded-full transition-all duration-300 border border-cyan-400/60"
+                >
+                  🛡️ Cybersecurity Portfolio
+                </a>
+              </li>
               <div className="flex space-x-6 pt-4 border-t border-gray-700">
                 <a
                   href="https://github.com/vivekdeveloper20"
